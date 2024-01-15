@@ -1,0 +1,60 @@
+.landingPage_container{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../../assets/img/landingPage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.button{
+    border: none;
+    width: 9em;
+    height: 3em;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #e6dada;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    position: absolute;
+    top: 51%;
+    left: 45%;
+}
+
+.button:hover {
+    height: 3.7em;
+    width: 9.7em;
+    animation: button 3s linear infinite;
+    box-shadow: 0px 4px 25px 5px rgba(28, 1, 227, 0.855);
+}
+
+@keyframes button {
+    0%{
+        background-position: 0%;
+    
+    }
+
+    50%{
+        background-position: 30%;
+    } 
+   
+    70%{
+      background-position: 60%;
+    }
+
+    100%{
+        background-position: 130%;
+    }
+}
+
+.button:active {
+    box-shadow: 0px 4px 20px 20px rgba(28, 37, 138, 0.59);
+    animation: button 1s linear infinite;
+} 
+
+
+

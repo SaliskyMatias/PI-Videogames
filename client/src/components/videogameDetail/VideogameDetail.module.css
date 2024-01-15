@@ -1,0 +1,111 @@
+.card_main {
+    background-image: url('../../assets//img/6053836.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.card_detail_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 100px;
+}
+  
+.card_detail_image img {
+    width: 100%;
+}
+  
+.card_detail_text {
+    color: white;
+}
+
+.card_detail_name {
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    color: rgba(225, 236, 238, 0.937);
+}
+
+.card_detail_description {
+    font-size: 1.08em;
+    color: rgba(234, 231, 231, 0.943);
+    line-height: 1.3;
+    margin-bottom: 13px;
+}
+
+.card_detail_platforms {
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgba(236, 234, 234, 0.943);
+
+}
+
+.card_detail_genres {
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgba(236, 234, 234, 0.943);
+}
+
+.card_detail_rating {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(236, 234, 234, 0.943);
+}
+
+.card_detail_relased {
+    display: inline;
+    margin-left: 260px;
+    margin-right: 100px;
+    color: rgb(169, 166, 166);
+
+}
+
+.card_id {
+    display: inline;
+    color: rgb(169, 166, 166);
+}
+
+.card_button {
+    position: absolute;
+    left: 900px;
+    bottom: 100px;
+    width: 8em;
+    height: 3em;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    background: radial-gradient(circle, rgba(214,174,238,1) 0%, rgba(148,181,233,1) 100%);
+    transition: box-shadow 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+.card_button:hover {
+    height: 3.7em;
+    width: 9.7em;
+    box-shadow: 0px 4px 25px 5px rgba(95, 17, 110, 0.873);
+    animation: button 1s linear infinite;
+
+}
+ 
+@keyframes button {
+    0% {
+        box-shadow: 0px 0px 15px 5px rgba(95, 17, 110, 0.5); 
+    }
+    50% {
+        box-shadow: 0px 0px 25px 10px rgba(95, 17, 110, 0.8); 
+    }
+    100% {
+        box-shadow: 0px 0px 15px 5px rgba(95, 17, 110, 0.5); 
+    }
+}
+
+.card_button:active {
+    color: aliceblue;
+} 
+

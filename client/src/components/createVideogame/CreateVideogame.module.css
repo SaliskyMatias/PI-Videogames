@@ -1,0 +1,164 @@
+.form_container {
+    background-image: url('../../assets/img/6053836.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+ 
+.form_left {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ 
+.form_right {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+ 
+.fieldset legend {
+    color: white;
+    font-size: 1.9em;
+}
+
+.form_left label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.form_left input { 
+    width: 20vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: none;
+}
+
+.form_name {
+    margin-bottom: 15px;
+}
+
+.form_image {
+    margin-bottom: 15px;
+}
+
+.form_description {
+    margin-bottom: 15px;
+}
+
+.form_description textarea {
+    width: 25vw;
+    height: 20vh;
+    border-radius: 10px;
+    border: none;
+}
+
+.form_released {
+    margin-bottom: 15px;
+}
+
+.form_rating {
+    margin-bottom: 30px;
+}
+
+
+.form_right h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.form_right p {
+    margin-bottom: 20px;
+}
+
+.form_platforms {
+    background-color: rgba(5, 4, 16, 0.249);
+    color: rgba(215, 225, 234, 0.721);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 25px;
+    border-radius: 15px;
+    position: relative;
+    right: 50px;
+}
+
+
+.form_genres {
+    background-color: rgba(5, 4, 16, 0.249);
+    color: rgba(215, 225, 234, 0.721);
+    padding-top: 25px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    right: 50px;
+}
+
+.form_buttons button {
+    color: rgba(0, 1, 2, 0.961);
+    margin-left: 30px;
+    width: 6vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 320px;
+    text-align: center;
+    font-size: 14px;
+    background: radial-gradient(circle, rgba(214,174,238,1) 0%, rgba(148,181,233,1) 100%);
+    transition: box-shadow 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.form_buttons button:hover {
+    height: 3.7em;
+    width: 9.7em;
+    box-shadow: 0px 4px 25px 5px rgba(95, 17, 110, 0.873);
+    animation: button 1s linear infinite;
+}
+ 
+@keyframes button {
+    0% {
+        box-shadow: 0px 0px 15px 5px rgba(95, 17, 110, 0.5); 
+    }
+    50% {
+        box-shadow: 0px 0px 25px 10px rgba(95, 17, 110, 0.8); 
+    }
+    100% {
+        box-shadow: 0px 0px 15px 5px rgba(95, 17, 110, 0.5); 
+    }
+}
+
+.form_buttons button:active {
+    color: aliceblue;
+} 
+
+.form_buttons button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+
+  
+

@@ -94,6 +94,12 @@ const reducer = (state = initialState, action) => {
         
             if (action.payload === 'created') {
                 filteredByCreation = allVideogames.filter((videogame) => typeof videogame.id === 'string');
+                
+                if(!filteredByCreation.length) {
+                    return {
+                        ...state
+                    }
+                }
             }
         
             if (action.payload === 'available') {

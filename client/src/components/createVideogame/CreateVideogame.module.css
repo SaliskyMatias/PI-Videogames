@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;
     color: white;
+    min-height: 100vh;
 }
 
 .form {
@@ -44,6 +45,7 @@
     display: block;
     margin-bottom: 10px;
     font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form_left input { 
@@ -84,6 +86,8 @@
 .form_right h3 {
     margin-bottom: 10px;
     font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .form_right p {
@@ -100,6 +104,8 @@
     border-radius: 15px;
     position: relative;
     right: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
 }
 
 
@@ -113,6 +119,8 @@
     gap: 20px;
     position: relative;
     right: 50px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .form_buttons button {
@@ -128,6 +136,7 @@
     font-size: 14px;
     background: radial-gradient(circle, rgba(214,174,238,1) 0%, rgba(148,181,233,1) 100%);
     transition: box-shadow 0.3s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
+    bottom: 35px;
 }
 
 .form_buttons button:hover {

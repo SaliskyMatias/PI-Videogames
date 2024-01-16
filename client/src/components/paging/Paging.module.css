@@ -6,7 +6,9 @@
     border: none;
     background-color: rgba(9, 9, 29, 0.535);
     color: rgba(249, 248, 248, 0.862);
-    font-weight: 700;
-    font-size: 0.8em;
+    font-weight: 300;
+    font-size: 0.9em;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+
 }

@@ -19,6 +19,7 @@
     margin-top: 6px;
     margin-bottom: 15px;
     font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card_img {
@@ -31,14 +32,14 @@
     font-weight: 200;
     font-size: 1.1em;
     margin-bottom: 15px;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .rating {
     color: rgba(227, 223, 223, 0.881);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
-
-
 
 .card_container {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;

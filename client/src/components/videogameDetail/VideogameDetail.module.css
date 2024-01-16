@@ -6,7 +6,6 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    min-width: 100vw;
 }
 
 .card_detail_container {
@@ -17,11 +16,17 @@
 }
   
 .card_detail_image img {
-    width: 100%;
+    width: 50vw;
+    height: 60vh;
+    min-width: 50vw;
+    min-height: 60vh;
+    max-width: 50vw;
+    max-height: 65vh;
 }
   
 .card_detail_text {
     color: white;
+
 }
 
 .card_detail_name {
@@ -29,32 +34,41 @@
     font-size: 2.4em;
     margin-bottom: 10px;
     color: rgba(225, 236, 238, 0.937);
+    font-family: 'Roboto', sans-serif;
 }
 
 .card_detail_description {
     font-size: 1.08em;
-    color: rgba(234, 231, 231, 0.943);
+    color: rgba(246, 246, 246, 0.964);
     line-height: 1.3;
     margin-bottom: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
 }
 
 .card_detail_platforms {
     text-align: center;
     margin-bottom: 15px;
     color: rgba(236, 234, 234, 0.943);
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .card_detail_genres {
     text-align: center;
     margin-bottom: 15px;
     color: rgba(236, 234, 234, 0.943);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .card_detail_rating {
     text-align: center;
     margin-bottom: 40px;
     color: rgba(236, 234, 234, 0.943);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .card_detail_relased {
@@ -62,12 +76,13 @@
     margin-left: 260px;
     margin-right: 100px;
     color: rgb(169, 166, 166);
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .card_id {
     display: inline;
     color: rgb(169, 166, 166);
+    font-family: 'Roboto', sans-serif;
 }
 
 .card_button {

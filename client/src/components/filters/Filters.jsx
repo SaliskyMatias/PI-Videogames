@@ -19,8 +19,8 @@ const Filters = ({ genres, handleChangeByGenres, handleChangeByCreation, handleC
 
             <div className={style.filters_genres}>
                 <label htmlFor="genres">Genres</label>
-                <select name="filterByGenre" id="genres" onChange={handleChangeByGenres}>
-                    <option key={"all"} value="All">All</option>
+                <select name="filterByGenre" id="genres" onChange={handleChangeByGenres} defaultValue="default">
+                    <option value="default" disabled hidden >Genre</option>
                     {
                         genres?.map((genre) => {
                             return(

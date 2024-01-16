@@ -70,6 +70,12 @@ const reducer = (state = initialState, action) => {
 
             const filteredByGenre = allVideogames.filter((videogame) => videogame.genres.includes(action.payload));
 
+            if(!filteredByGenre.length) {
+                return {
+                    ...state
+                }
+            }
+
             return {
                 ...state,
                 videogames: [...filteredByGenre].splice(0, cardsPerPage),

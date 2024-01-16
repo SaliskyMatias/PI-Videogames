@@ -31,11 +31,9 @@ const Cards = () => {
         dispatch(filterByGenre(event.target.value));
     }
 
-
     const handleChangeByCreation = (event) => {
         dispatch(filterByCreation(event.target.value));
     }
-
 
     const handleChangeByName = (event) => {
         dispatch(orderByName(event.target.value));
@@ -45,19 +43,17 @@ const Cards = () => {
         dispatch(orderByRating(event.target.value));
     }   
 
-    const handleClick = () => {
-        dispatch(getAllVideogames());
-    }
-
     const handlePagination = (event) => {
         dispatch(Pagination(event.target.name));
+    }
+
+    const handleClick = () => {
+        dispatch(getAllVideogames());
     }
 
     const handleReset = () => {
         dispatch(videogamesReset());
     }
-
-    // console.log(allvideogames);
 
     return (
         allvideogames && allvideogames.length ?

@@ -18,3 +18,12 @@
     margin-left: 4px;
     margin-right: 4px;
 }
+
+.paging_container button:hover {
+    transform: scale(1.1);
+}
+  
+.paging_container button:active {
+    transform: scale(1.2);
+    color: white;
+}

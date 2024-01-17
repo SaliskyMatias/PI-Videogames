@@ -3,8 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import validation from '../../utils/validation';
 import { getAllGenres, postVideogame, getAllPlatforms } from '../../redux/actions';
-import NavBar from "../navBar/NavBar";
 import style from './CreateVideogame.module.css';
+
+// Components
+import NavBar from "../navBar/NavBar";
 
 const CreateVideogame = () => {
 

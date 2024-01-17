@@ -86,7 +86,6 @@ const reducer = (state = initialState, action) => {
         }
 
         case FILTER_BY_CREATION: {
-            // const allVideogames = state.filters ? [...state.videogamesFiltered] : [...state.videogamesBackUp];
 
             let allVideogames = [...state.videogamesBackUp];
 

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getAllVideogames, getAllGenres, filterByGenre, filterByCreation, orderByName, orderByRating, Pagination, videogamesReset } from '../../redux/actions';
+import { getAllVideogames, getAllGenres, Pagination } from '../../redux/actions';
 import style from './Cards.module.css';
 
 // Components
@@ -27,22 +27,6 @@ const Cards = () => {
     }, [dispatch, allvideogames]);
 
 
-    const handleChangeByGenres = (event) => {
-        dispatch(filterByGenre(event.target.value));
-    }
-
-    const handleChangeByCreation = (event) => {
-        dispatch(filterByCreation(event.target.value));
-    }
-
-    const handleChangeByName = (event) => {
-        dispatch(orderByName(event.target.value));
-    }
-
-    const handleChangeByRating = (event) => {
-        dispatch(orderByRating(event.target.value));
-    }   
-
     const handlePagination = (event) => {
         dispatch(Pagination(event.target.name));
     }
@@ -51,10 +35,7 @@ const Cards = () => {
         dispatch(getAllVideogames());
     }
 
-    const handleReset = () => {
-        dispatch(videogamesReset());
-    }
-
+ 
     return (
         allvideogames && allvideogames.length ?
 
@@ -64,15 +45,7 @@ const Cards = () => {
 
             <div className={style.cards}>
                 <div className={style.cards_filters} >  
-                    <Filters 
-                        genres={genres}
-                        handleChangeByGenres={handleChangeByGenres} 
-                        handleChangeByCreation={handleChangeByCreation}  
-                        handleChangeByName={handleChangeByName}
-                        handleChangeByRating={handleChangeByRating}
-                    />
-
-                    <button onClick={handleReset} className={style.cards_reset}>Reset All</button>
+                    <Filters genres={genres}/>
                 </div>
 
                 <div className={style.cards_container}>

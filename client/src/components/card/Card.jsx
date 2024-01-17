@@ -21,7 +21,7 @@ Card.propTypes = {
     name: PropTypes.string,
     background_image: PropTypes.string,
     genres: PropTypes.string,
-    rating: PropTypes.number,
+    rating: PropTypes.number
 };
 
 export default Card; 

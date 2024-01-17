@@ -10,5 +10,11 @@
     font-size: 0.9em;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
 
+.paging_container p {
+    display: inline;
+    color: rgba(249, 248, 248, 0.862);
+    margin-left: 4px;
+    margin-right: 4px;
 }

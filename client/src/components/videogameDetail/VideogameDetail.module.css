@@ -105,7 +105,6 @@
     width: 9.7em;
     box-shadow: 0px 4px 25px 5px rgba(95, 17, 110, 0.873);
     animation: button 1s linear infinite;
-
 }
  
 @keyframes button {

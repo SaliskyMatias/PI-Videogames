@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import style from './NavBar.module.css';
-import SearchBar from "../searchBar/SearchBar";
 import { useLocation } from "react-router-dom";
+
+// Components
 import Paging from "../paging/Paging";
+import SearchBar from "../searchBar/SearchBar";
 
 export const NavBar = ({ handleClick, handlePagination }) => {
 

@@ -29,7 +29,8 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 videogames: action.payload,
                 videogamesFiltered: action.payload,
-                filters: true
+                filters: true,
+                currentPage: 0
             }
 
         case GET_VIDEOGAME_DETAIL:

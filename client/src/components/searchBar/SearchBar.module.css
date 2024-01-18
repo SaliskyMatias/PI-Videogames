@@ -19,3 +19,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.searchBar_container button:active {
+    transform: scale(1.1);
+    color: white;
+}
+
